@@ -20,6 +20,8 @@
 
 </h2>
 
+# [Live Preview](https://pokemon-short-game.netlify.app)
+
 ## Current Issue:
 - #### Trying to find the problem why the name of the Pokemon is in Japanese.
     - #### If someone sees this project and knows how to solve it, let me know. You can contact me on [Keybase](https://keybase.io/jeffersonfed) or other [contacts](https://links-jefferson.vercel.app).

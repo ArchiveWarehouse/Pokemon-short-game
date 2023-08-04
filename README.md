@@ -21,6 +21,7 @@
 </h2>
 
 # [Live Preview](https://pokemon-short-game.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a434340b-2b0e-4fa8-9799-a71e2e792210/deploy-status)](https://app.netlify.com/sites/pokemon-short-game/deploys)
 
 ## Current Issue:
 - #### Trying to find the problem why the name of the Pokemon is in Japanese.

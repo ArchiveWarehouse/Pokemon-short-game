@@ -1,0 +1,285 @@
+
+@charset "UTF-8";
+/* 共通 */
+html{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.wrap{
+    width: 80%;
+    margin: 0 auto;/* 中央寄せ */
+}
+
+/* spot.html */
+.spot{
+    background-color: #018672;
+    background-image: url(../img/building2.png);
+    background-repeat: no-repeat;
+    background-size: 375px auto;
+    background-position: center -46%;
+}
+.point{
+    width: 30px;
+    height: 30px;
+    background-color: #B7221C;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: tikatika 2s infinite;
+    /* インフィニット */
+}
+@keyframes tikatika{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.spot h2{
+    font-size: 25px;
+    margin-top: 30px;
+    letter-spacing: 10px;/* 文字間 */
+}
+.sub_logo{
+    width: 200px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.btn{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+}
+.escape{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.gometa{
+    position: absolute;
+    top: 24%;
+    left: 46%;
+}
+@media (max-width: 600px) {
+    .gometa{
+        position: absolute;
+        top: 24%;
+        left: 40%;
+    }
+}
+
+/* メタバース教室 */
+.meta{
+    background-color: #B7221C;
+}
+.meta h2{
+    font-size: 25px;
+    margin-top: 30px;
+    letter-spacing: 10px;
+}
+.lead{
+    font-size: 16px;
+}
+.reload,.ball{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.poke img{
+    width: 150px;
+    height: auto;
+}
+.area-a{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+.area-b{
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+.area-c{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+.area-c img{
+    width: 250px;
+}
+
+/* バトルフィールド */
+.ball{
+    background-color: rgba(247, 3, 3, 0.8);
+}
+.panel{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    width: 100%;
+}
+.left-panel,.right-panel{
+    width: 70px;
+    height: 70px;
+    background-color: rgba(252, 142, 210, 0.8);
+    border-radius: 50%;
+}
+.left-panel span,.right-panel span{
+    font-size: 45px;
+    line-height: 67px;
+}
+.enemyinfo{
+    background-color: rgba(147, 142, 142, 0.5);
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 5px;
+    width: 120px;
+}
+.buttle{
+    background-color: #018672;
+}
+.enemypoke{
+    width: 40%;
+    height: auto;
+    margin: 3% auto 0; /* 上 左右 下 */
+}
+@media (max-width: 600px) {
+    .enemypoke{
+        width: 80%;
+        height: auto;
+        margin: 3% auto 0; /* 上 左右 下 */
+    }
+}
+@media (max-width: 700px) {
+    .enemypoke{
+        width: 80%;
+        height: auto;
+        margin: 3% auto 0; /* 上 左右 下 */
+    }
+}
+@media (max-width: 800px) {
+    .enemypoke{
+        width: 80%;
+        height: auto;
+        margin: 3% auto 0; /* 上 左右 下 */
+    }
+}
+@media (max-width: 900px) {
+    .enemypoke{
+        width: 80%;
+        height: auto;
+        margin: 3% auto 0; /* 上 左右 下 */
+    }
+}
+.enemyshape{
+    margin-top: 40px;
+}
+/* ライフゲージ */
+.life{
+    width: 50%;
+    background-color: rgba(10,0,50,0.6);
+    margin: 0 auto;
+    padding: 3px;
+    display: flex;
+}
+.life-frame{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(0, 255,255);
+}
+.life-mark{
+    width: 3px;
+    height: 3px;
+    background-color: rgb(255,255,255);
+    filter:saturate(500%);
+    box-shadow: 
+        0 0 5px 3px rgb(200 255 255),
+        0 0 7px 7px rgb(100 255 255);
+}
+
+/* 攻撃されたときのアニメーション */
+.damage{
+    animation: itai 1s infinite;
+}
+@keyframes itai {
+    0%{
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50%{
+        transform: translate(4px, 4px) rotate(2deg);
+    }
+    100%{
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+/* エンドフィールド */
+.end-poke{
+    width: 50%;
+    margin: 0 auto;
+}
+/* ポケモンやられたアニメーション */
+.animated {
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+}
+
+@-webkit-keyframes sample1 {
+	from {
+		-webkit-animation-timing-function: linear;
+		-webkit-transform: translate(0px,0px) scale(1,1) rotate(0deg) skew(0deg,0deg);
+		opacity: 1;
+	} to {
+		-webkit-animation-timing-function: linear;
+		-webkit-transform: translate(60px,0px) scale(1,1) rotate(55deg) skew(0deg,0deg);
+		opacity: 1.0;
+	} 50% {
+		-webkit-animation-timing-function: linear;
+		-webkit-transform: translate(0px,0px) scale(1,1) rotate(-15deg) skew(0deg,0deg);
+		opacity: 1.0;
+	} 
+}
+
+@keyframes sample1 {
+	from {
+		animation-timing-function: linear;
+		transform: translate(0px,0px) scale(1,1) rotate(0deg) skew(0deg,0deg);
+		opacity: 1;
+	} to {
+		animation-timing-function: linear;
+		transform: translate(60px,0px) scale(1,1) rotate(55deg) skew(0deg,0deg);
+		opacity: 1.0;
+	} 50% {
+		animation-timing-function: linear;
+		transform: translate(0px,0px) scale(1,1) rotate(-15deg) skew(0deg,0deg);
+		opacity: 1.0;
+	} 
+}
+
+.sample1 {
+	-webkit-animation-name: sample1;
+	animation-name: sample1;
+	-webkit-transform-origin: center center;
+	transform-origin: center center;
+}

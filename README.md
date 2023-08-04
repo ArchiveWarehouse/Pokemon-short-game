@@ -24,4 +24,4 @@
 
 ## Current Issue:
 - #### Trying to find the problem why the name of the Pokemon is in Japanese.
-    - #### If someone sees this project and knows how to solve it, let me know. You can contact me on [Keybase](https://keybase.io/jeffersonfed) or other [contacts](https://links-jefferson.vercel.app).
+    - #### Before, I created it in Japanese. Now, I have edited some of the code, but it's still in Japanese. If you sees this project and knows how to solve it, let me know. You can contact me on [Keybase](https://keybase.io/jeffersonfed) or other [contacts](https://links-jefferson.vercel.app).<br><br>It would be helpful if you know how to do it.

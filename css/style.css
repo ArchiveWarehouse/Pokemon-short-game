@@ -71,6 +71,24 @@ img{
     bottom: 20px;
     right: 20px;
 }
+
+.logo-position{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* padding-left: 50%; */
+}
+.btn2{
+    /* display: flex; */
+    width: 50px;
+    height: 50px;
+    /* background-color: rgba(255,255,255,0.5);
+    border-radius: 50%; */
+    /* text-align: center; */
+    line-height: 10px;
+}
+
+
 .gometa{
     position: absolute;
     top: 24%;

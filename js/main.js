@@ -110,11 +110,12 @@ $(function(){
     let pokeAPI = $.ajax({
         url : "https://pokeapi.co/api/v2/pokemon/"+pokeno,
         type : "GET",
-        dataType : "json"
+        dataType : "json",
+        data: {
+            language: 'en', // Specify English language
+        }
     });
-    // let language = $.ajax({
-    //     url : "https://pokeapi.co/api/v2/language/9/"
-    // });
+    
     console.log(pokeAPI);
     let nameget = () =>{
         let pokespeciesAPI = $.ajax({
